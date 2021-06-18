@@ -1,3 +1,24 @@
+# GeekTrust Frontend Coding Challenge
+## SPACE-Finding Falcone
+  
+Here are the some screenshots
+## Desktop View
+### Homepage / Landingpage
+
+
+## '/find' page
+
+
+
+## Mobile View
+### Homepage / Landingpage
+
+
+## '/find' page
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
