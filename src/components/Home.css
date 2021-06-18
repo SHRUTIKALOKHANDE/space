@@ -1,0 +1,32 @@
+.mainView {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	width: 100%;
+	min-height: calc(100vh - 60px);
+	padding: 1em;
+}
+.destination {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	margin-bottom: 12em;
+}
+.footer-content {
+	padding-top: 10em;
+}
+@media screen and (max-width: 768px) {
+	.destination {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.time {
+		margin-top: 1em;
+	}
+}
