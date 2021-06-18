@@ -23,9 +23,13 @@ Here are the some screenshots
 
 ## Features / what we need to do
 We need to build a UI through which King Shan can
+
 • select 4 planets to search (out of the total 6)
+
 • select which space vehicles to send to these planets
-• see how much time it will take for the vehicles to reach their targets &
+
+• see how much time it will take for the vehicles to reach their targets 
+
 • show final result of success or failure
 
 # Getting Started with Create React App
