@@ -26,13 +26,12 @@ const getToken = async () => {
             await fetch(`https://findfalcone.herokuapp.com/token`, {
                 method: 'POST',
                 headers: {
-                    Accept: 'application/json',
+                    'Accept': 'application/json',
                     'content-type': 'application/json',
                 },
             })
         ).json();
         if (response) {
-            console.log('token', response.token);
             return response;
         }
     } catch (e) {
@@ -46,7 +45,7 @@ const findFalcone = async (token, planetNames, vehicleNames) => {
             await fetch(`https://findfalcone.herokuapp.com/find`, {
                 method: `POST`,
                 headers: {
-                    Accept: 'application/json',
+                    'Accept': 'application/json',
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
@@ -57,7 +56,6 @@ const findFalcone = async (token, planetNames, vehicleNames) => {
             })
         ).json();
         if (response) {
-            console.log(response);
             return response;
         }
     } catch (e) {

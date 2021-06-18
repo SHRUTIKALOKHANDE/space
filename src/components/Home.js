@@ -39,73 +39,7 @@ class Home extends React.Component {
 				{ dest: 3, tm: 0 },
 			],
 		};
-	}
-	// getPlanetsData = async () => {
-	// 	try {
-	// 		let response = await (await fetch('https://findfalcone.herokuapp.com/planets')).json();
-	// 		if (response) {
-	// 			return response;
-	// 		}
-	// 	} catch (e) {
-	// 		return e;
-	// 	}
-	// };
-
-	// getVehicleData = async () => {
-	// 	try {
-	// 		let response = await (await fetch('https://findfalcone.herokuapp.com/vehicles')).json();
-	// 		if (response) {
-	// 			return response;
-	// 		}
-	// 	} catch (e) {
-	// 		return e;
-	// 	}
-	// };
-
-	// getToken = async () => {
-	// 	try {
-	// 		let response = await (
-	// 			await fetch(`https://findfalcone.herokuapp.com/token`, {
-	// 				method: 'POST',
-	// 				headers: {
-	// 					Accept: 'application/json',
-	// 					'content-type': 'application/json',
-	// 				},
-	// 			})
-	// 		).json();
-	// 		if (response) {
-	// 			console.log('token', response.token);
-	// 			return response;
-	// 		}
-	// 	} catch (e) {
-	// 		return e;
-	// 	}
-	// };
-
-	// findFalcone = async () => {
-	// 	try {
-	// 		let response = await (
-	// 			await fetch(`https://findfalcone.herokuapp.com/find`, {
-	// 				method: `POST`,
-	// 				headers: {
-	// 					Accept: 'application/json',
-	// 					'Content-Type': 'application/json',
-	// 				},
-	// 				body: JSON.stringify({
-	// 					token: this.token.token,
-	// 					planet_names: this.planet_names,
-	// 					vehicle_names: this.vehicle_names,
-	// 				}),
-	// 			})
-	// 		).json();
-	// 		if (response) {
-	// 			console.log(response);
-	// 			return response;
-	// 		}
-	// 	} catch (e) {
-	// 		return e;
-	// 	}
-	// };
+	};
 
 	async componentDidMount() {
 		this.planets = await getPlanetsData();
@@ -115,14 +49,12 @@ class Home extends React.Component {
 			filteredVehicles: this.vehicles,
 		});
 		this.token = await getToken();
-	}
+	};
 
 	handleOnSelect = (e, planetId) => {
-		console.log(e, planetId);
 		this.setState({
 			distance: this.planets[e].distance,
 		});
-		console.log(this.planets[e].name);
 		this.setState(
 			(prevState) => ({
 				planets: prevState.planets.map((ele) =>
@@ -134,12 +66,10 @@ class Home extends React.Component {
 						: ele
 				),
 			}),
-			console.log(this.state.planets)
 		);
 	};
 
 	handleOnChange = (key, id, t) => {
-		console.log(key, id, t);
 		this.setState((prevState) => ({
 			filteredVehicles: prevState.filteredVehicles.map((e) =>
 				e.key === key
@@ -200,6 +130,10 @@ class Home extends React.Component {
 					timeTaken: this.timeTaken,
 				},
 			});
+		}else if(find.staus === 'false'){
+			message.info('Sorry! Failed on Finding Falcone. Try again.');
+		}else{
+			message.error('Oops! please check backend.');
 		}
 	};
 
