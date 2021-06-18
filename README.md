@@ -5,18 +5,21 @@ Here are the some screenshots
 ## Desktop View
 ### Homepage / Landingpage
 
+![Screenshot 2021-06-18 at 23-13-24 FindingFalcone](https://user-images.githubusercontent.com/30066889/122599257-ae67c580-d08b-11eb-903c-921425491ff6.png)
 
 ## '/find' page
 
+![Screenshot 2021-06-18 at 23-14-02 FindingFalcone](https://user-images.githubusercontent.com/30066889/122599428-fc7cc900-d08b-11eb-965f-b23e9805b9e0.png)
 
 
 ## Mobile View
 ### Homepage / Landingpage
 
+![Screenshot 2021-06-18 at 23-19-00 FindingFalcone](https://user-images.githubusercontent.com/30066889/122599394-eec74380-d08b-11eb-80fa-fdb36c692981.png)
 
 ## '/find' page
 
-
+![Screenshot 2021-06-18 at 23-15-38 FindingFalcone](https://user-images.githubusercontent.com/30066889/122599495-17e7d400-d08c-11eb-9da4-822dca880bc7.png)
 
 
 # Getting Started with Create React App
